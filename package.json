@@ -1,0 +1,47 @@
+{
+  "name": "meeti",
+  "version": "1.0.0",
+  "description": "Proyecto Meeti con Node, PostgreeSQL y EJS",
+  "main": "index.js",
+  "scripts": {
+    "desarrollo": "concurrently \"npm run dev\" \"npm run watch\" ",
+    "dev": "nodemon . /index.js",
+    "start": "node ./index.js",
+    "watch": "webpack --w --mode development"
+  },
+  "author": "Francisco Hernandez Valenzuela",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.5",
+    "nodemon": "^2.0.20",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {
+    "axios": "^1.2.2",
+    "bcrypt": "^5.1.0",
+    "concurrently": "^7.6.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^7.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.1",
+    "leaflet-geosearch": "^2.7.0",
+    "moment": "^2.29.4",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.8.0",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "pg": "^8.8.0",
+    "sequelize": "^5.1.0",
+    "shortid": "^2.2.16",
+    "slug": "^8.2.2",
+    "sweetalert2": "^11.6.16",
+    "uuid": "^9.0.0"
+  }
+}
